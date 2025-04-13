@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -18,12 +18,10 @@ public class D08_Scene02_Controller : MonoBehaviour
         }
         else
         {
-            //Message를 UserInput(데이터 저장된 값)으로 대체
             Message.text = UserInput;
         }
     }
 
-    //씬 전환
     public void OnClick_LoadScene(Object SceneObject)
     {
         SceneManager.LoadScene(SceneObject.name);

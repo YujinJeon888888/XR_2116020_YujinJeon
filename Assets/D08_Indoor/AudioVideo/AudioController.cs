@@ -9,13 +9,16 @@ public class AudioController: MonoBehaviour
     {
         Audio[0].loop = true;
         Audio[0].Play();
-        Audio[1].loop = true;
-        Audio[1].Play();
+        if (Audio.Length > 1)
+        {
+            Audio[1].loop = true;
+            Audio[1].Play();
+        }
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             for (int i = 0; i < Audio.Length; i++)
             {

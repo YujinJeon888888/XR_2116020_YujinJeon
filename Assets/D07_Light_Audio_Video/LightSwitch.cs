@@ -7,11 +7,7 @@ public class LightSwitch : MonoBehaviour
     public GameObject LampOn;
     public GameObject LampOff;
     int state = -1;
-    private void Start()
-    {
-        LampOn.SetActive(false);
-        LampOff.SetActive(false);
-    }
+
     private void OnMouseDown()
     {
         state *= -1;
