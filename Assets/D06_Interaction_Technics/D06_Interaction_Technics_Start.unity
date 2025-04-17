@@ -1399,6 +1399,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1102998107}
   - component: {fileID: 1102998109}
+  - component: {fileID: 1102998110}
   m_Layer: 0
   m_Name: Put_Controller
   m_TagString: Untagged
@@ -1442,6 +1443,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1102998110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102998106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4625328353eb23f458130aa084c2b6cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetObjectToThrow: {fileID: 466489313}
+  PlayerCamera: {fileID: 2057923360}
+  UI: {fileID: 28724240}
 --- !u!1 &1218410859
 GameObject:
   m_ObjectHideFlags: 0
@@ -2338,6 +2354,11 @@ PrefabInstance:
       addedObject: {fileID: 1054073779}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+--- !u!4 &2057923360 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+  m_PrefabInstance: {fileID: 2057923359}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2065268109
 GameObject:
   m_ObjectHideFlags: 0
